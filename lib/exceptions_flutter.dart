@@ -1,3 +1,3 @@
 library exceptions_flutter;
 
-export 'src/exceptions_flutter.dart';
+export 'src/service_exception.dart';

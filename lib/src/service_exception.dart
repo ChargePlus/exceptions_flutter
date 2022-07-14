@@ -1,10 +1,10 @@
 import 'package:equatable/equatable.dart';
 
-/// {@template exceptions_repository}
+/// {@template exceptions_flutter}
 /// Repository which provides exceptions in a format to users
 /// {@endtemplate}
 class ServiceException extends Equatable implements Exception {
-  /// {@macro exceptions_repository}
+  /// {@macro exceptions_flutter}
   const ServiceException({
     this.code,
     this.message,
