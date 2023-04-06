@@ -1,6 +1,6 @@
 name: exceptions_flutter
 description: Exceptions Flutter is a repository that provides exception in a format
-version: 1.0.0+1
+version: 1.0.2+3
 publish_to: none
 
 environment:
