@@ -8,6 +8,7 @@ class ServiceException extends Equatable implements Exception {
   const ServiceException({
     this.code,
     this.message,
+    this.displayMessageKey,
     this.stackTrace,
   });
 
@@ -20,11 +21,14 @@ class ServiceException extends Equatable implements Exception {
   /// The long form message of the exception.
   final String? message;
 
+  /// The key of the message to display.
+  final String? displayMessageKey;
+
   /// An interface implemented by all stack trace objects.
   /// A [StackTrace] is intended to convey information to the user about the
   /// call sequence that triggered an exception.
   final StackTrace? stackTrace;
 
   @override
-  List<Object?> get props => [code, message, stackTrace];
+  List<Object?> get props => [code, message, displayMessageKey, stackTrace];
 }
