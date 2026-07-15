@@ -1,3 +1,5 @@
+// Most ServiceException instances below use StackTrace.current, which is
+// not a compile-time constant, so the constructor can't be const file-wide.
 // ignore_for_file: prefer_const_constructors
 import 'package:exceptions_flutter/exceptions_flutter.dart';
 import 'package:flutter_test/flutter_test.dart';
