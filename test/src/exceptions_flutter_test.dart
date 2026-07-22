@@ -1,4 +1,5 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, test exceptions intentionally
+// build instances at runtime to exercise the constructors.
 import 'package:exceptions_flutter/exceptions_flutter.dart';
 import 'package:flutter_test/flutter_test.dart';
 
