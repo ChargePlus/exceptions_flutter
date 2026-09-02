@@ -1,3 +1,5 @@
+// Constructors are non-const here since these tests build instances with
+// varying runtime values across cases.
 // ignore_for_file: prefer_const_constructors
 import 'package:exceptions_flutter/exceptions_flutter.dart';
 import 'package:flutter_test/flutter_test.dart';
