@@ -1,0 +1,26 @@
+# Codex project config (loads once you trust this project in Codex).
+#
+# exceptions        read-only (ask / review)
+# exceptions-build  + worktree writes and network (the default)
+default_permissions = "exceptions-build"
+
+[permissions.exceptions]
+extends = ":read-only"
+
+[permissions.exceptions-build]
+extends = "exceptions"
+
+[permissions.exceptions-build.network]
+enabled = true # pub get
+
+[permissions.exceptions-build.filesystem]
+":tmpdir" = "write"
+":slash_tmp" = "write"
+"~/.pub-cache" = "write"
+"~/.dart-tool" = "write"   # flutter/dart telemetry
+"~/.dartServer" = "write"  # analysis server cache
+"~/.flutter" = "write"
+"~/.config/flutter" = "write"  # tool_state
+
+[permissions.exceptions-build.filesystem.":workspace_roots"]
+"." = "write"
