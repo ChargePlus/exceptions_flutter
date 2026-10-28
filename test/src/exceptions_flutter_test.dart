@@ -47,10 +47,7 @@ void main() {
         stackTrace: StackTrace.empty,
       );
 
-      expect(
-        exception.props,
-        ['code1', 'message1', 'key1', StackTrace.empty],
-      );
+      expect(exception.props, ['code1', 'message1', 'key1', StackTrace.empty]);
     });
 
     test('instances with different properties are not equal', () {
@@ -72,10 +69,7 @@ void main() {
     });
 
     test('can be instantiated with no arguments', () {
-      expect(
-        const ServiceException(),
-        const ServiceException(),
-      );
+      expect(const ServiceException(), const ServiceException());
     });
 
     test('implements Exception', () {
