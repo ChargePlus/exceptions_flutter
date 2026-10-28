@@ -84,8 +84,9 @@ rounds on the same issue, fix it yourself or ask the user.
 ## 4. Land (Claude)
 
 Commit in the worktree (conventional message + attribution), push, and open
-a PR into `develop`. Stop at the human review gate; never merge. Codex can
-make review fix-ups too: write the findings as feedback and run `resume`.
+a PR into `develop`, then run the `routine` skill on it. Stop at the human
+review gate; never merge. Codex can make the routine's fix-ups too: write the
+triaged findings as feedback and run `resume`.
 
 ## Read-only questions
 

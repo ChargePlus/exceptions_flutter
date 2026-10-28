@@ -41,3 +41,9 @@ available it takes most of the load; otherwise work in Claude as usual.
 - Git Flow, bare-semver tags (1.0.x). A stray non-semver tag
   `depsUpdate` exists — don't imitate it.
 - The MIT badge in the README is stale — no LICENSE file exists.
+
+## Pre-merge routine
+
+Before handing a PR over for review, run the `routine` skill (`/simplify`,
+`/code-review`, gates, consumer impact). It stops at the human review gate;
+never merge.
