@@ -8,7 +8,7 @@
 .buildlog/
 .history
 .svn/
-.pubspec.lock
+pubspec.lock
 
 # IntelliJ related
 *.iml
@@ -40,3 +40,5 @@ app.*.symbols
 app.*.map.json
 
 coverage/
+# Claude related
+.claude/settings.local.json
