@@ -38,7 +38,8 @@ available it takes most of the load; otherwise work in Claude as usual.
 
 ## Repo facts
 
-- Git Flow, bare-semver tags (1.0.x). A stray non-semver tag
+- Git Flow, bare-semver tags (1.0.x). Cut releases with the
+  `cut-release` skill. A stray non-semver tag
   `depsUpdate` exists — don't imitate it.
 - The MIT badge in the README is stale — no LICENSE file exists.
 
