@@ -19,8 +19,8 @@ is the **Independent verdict** gate. The procedure is in
    `const` constructor, throws and catches it as `on ServiceException`,
    compares instances with and without a stack trace, holds one in an
    `Equatable` state and prints it, at the merge base and at the head.
-   For a change with no consumer to stand in for (`.claude/`, `.github/`,
-   `script.sh`), run each changed command the way its caller does, parent
+   For a change with no consumer to stand in for (`.claude/`, `.codex/`,
+   `.github/`, `CLAUDE.md`, `AGENTS.md`, `script.sh`), run each changed command the way its caller does, parent
    against head, as gates.md says. First ask whether the run can tell
    fixed from broken; if it cannot, the verdict is
    `PASS+NOTES (partial: <why>)` at best.
