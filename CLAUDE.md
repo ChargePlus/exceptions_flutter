@@ -9,11 +9,18 @@ apps, plus `api_request_helper_flutter` itself — all
 consuming via UNPINNED git URL with gitignored lock files: anything on
 `main` reaches everything on the next `pub get`.
 
-## Codex (optional builder)
+## Process: pstack
 
-Before implementation work, invoke the `codex` skill. Where Codex is
-available it takes most of the load; otherwise work in Claude as usual.
-`AGENTS.md` points Codex back at this file — keep repo guidance here.
+pstack is the process here (`.claude/settings.json` enables the plugin at
+project scope). Start non-trivial work with `/pstack:poteto-mode` and read
+`.claude/extensions/pstack.md` first: it lists the hard stops and the
+add-on gates. The review gates are in `.claude/extensions/review/gates.md`;
+they stop at Ezra's review and never merge. Codex, where it is available,
+is a pstack subagent (`.claude/agents/codex.md`). `AGENTS.md` points Codex
+back at this file — keep repo guidance here.
+
+This repository is public on GitHub: never commit keys, tokens, internal
+hostnames or customer data.
 
 ## Blast-radius rules
 
@@ -42,9 +49,3 @@ available it takes most of the load; otherwise work in Claude as usual.
   `cut-release` skill. A stray non-semver tag
   `depsUpdate` exists — don't imitate it.
 - The MIT badge in the README is stale — no LICENSE file exists.
-
-## Pre-merge routine
-
-Before handing a PR over for review, run the `routine` skill (`/simplify`,
-`/code-review`, gates, consumer impact). It stops at the human review gate;
-never merge.
