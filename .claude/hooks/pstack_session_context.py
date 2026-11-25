@@ -17,7 +17,7 @@ import sys
 ROOT = os.path.realpath(os.environ.get("CLAUDE_PROJECT_DIR") or os.getcwd())
 CONFIG = os.environ.get("CLAUDE_CONFIG_DIR") or os.path.expanduser("~/.claude")
 # The gates named in the session note; .claude/extensions/review/gates.md has the full table.
-GATES = "CI green, tests, cleanup, code review, interrogate, API compatibility and the equality contract, consumer impact, public-API docs, public repo, agent instructions"
+GATES = "CI green, tests, cleanup, code review, interrogate, API compatibility and the equality contract, consumer impact, security, public-API docs, public repo, agent instructions"
 
 
 def pinned_ref():
